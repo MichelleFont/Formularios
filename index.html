@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="container">
+        <h2>Accede a tu Área Clientes</h2>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="documento" value="dni" checked>
+                DNI o Tarjeta de residencia
+            </label>
+            <label>
+                <input type="radio" name="documento" value="pasaporte">
+                Pasaporte
+            </label>
+        </div>
+
+        <label for="numero-documento">Número de documento</label>
+        <input type="text" id="numero-documento" placeholder="DNI o Tarjeta de residencia">
+
+        <label>Fecha de nacimiento</label>
+        <div class="fecha-nacimiento">
+            <input type="text" placeholder="DD" maxlength="2">
+            <input type="text" placeholder="MM" maxlength="2">
+            <input type="text" placeholder="AAAA" maxlength="4">
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="recordar">
+            <label for="recordar">Recordar<span>?</span></label>
+        </div>
+
+        <button class="btn">Entrar</button>
+
+        <a href="#" class="info-link">Más información sobre seguridad</a>
+    </div>
+    </form>
+
+
+<hr>
+
+
+<form>
+    <div class="container">
+        <h2>Empieza creando tu usuario</h2>
+
+        
+        <div class="form-field">
+            <label for="nombre">Nombre (como sale en el DNI)</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+
+        
+        <div class="form-group">
+            <div class="form-field">
+                <label for="apellido1">1º apellido (como sale en el DNI)</label>
+                <input type="text" id="apellido1" placeholder="Primer apellido">
+            </div>
+            <div class="form-field">
+                <label for="apellido2">2º apellido (como sale en el DNI)</label>
+                <input type="text" id="apellido2" placeholder="Segundo apellido">
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            <div class="form-field">
+                <label for="tipo-documento">Tipo de documento</label>
+                <select id="tipo-documento">
+                    <option>DNI/NIF/CERT. AEAT</option>
+                    <option>Pasaporte</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="numero-documento">Número de documento</label>
+                <input type="text" id="numero-documento" placeholder="Escribe tu número">
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            <div class="form-field mobile-field">
+                <div class="mobile-flag"></div>
+                <input type="text" placeholder="Móvil">
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Escribe tu email">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
